@@ -1,2 +1,6 @@
 # DiseaseNER
 Disease Named Entity Recognizer
+Biomedical Named Entity Recognition (Bio-NER) is the crucial initial step in the information extraction process and a majorly focused research area in biomedical text mining. In the past years, several models and methodologies have been proposed for the recognition of semantic types related to gene, protein, chemical, drug and other biological relevant named entities. In this paper, we implemented a stacked ensemble approach combined with fuzzy matching for biomedical named entity recognition of disease names. The underlying concept of stacked generalization is to combine the outputs of base-level classifiers using a second-level meta-classifier in an ensemble. We used Conditional Random Field (CRF) as the underlying classification method that makes use of a diverse set of features, mostly based on domain specific, and are orthographic and morphologically relevant. In addition, we used fuzzy string matching to tag rare disease names from our in-house disease dictionary. For fuzzy matching, we incorporated two best fuzzy search algorithms Rabin Karp and Tuned Boyer Moore. Our proposed approach shows promised result of 94.66%, 89.12%, 84.10%, and 76.71% of F-measure while on evaluating training and testing set of both NCBI disease and BioCreative V CDR Corpora.
+
+Avialability:
+http://biominingbu.org:8080/dner/
